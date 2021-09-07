@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ body{
+    background-image: url("./spin.gif");
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+h1 {
+  color:blue;
+  font-family:'Georgia';
+  font-style:italic;
+  font-size: 100%;
+}
+h2 {
+  color:blue;
+  font-family: 'Papyrus';
+  font-style: normal;
+  font-size: 250%;
+}
+h3 {
+  color:p;
+  font-family:Script MT Bold;
+  font-style: italic;
+  font-size: 150%;
+}
+
+name{
+    color: blueviolet;
+    font-family:Script MT Bold;
+    font-style: italic;
+    font-size:larger
+    
+
+}
+.ch1{
+    display: inline-block;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 200px;
+    width: 550px;
+    margin-left: 10px;
+    color:blueviolet;
+   
+    vertical-align: top;
+    font-family:Script MT Bold;
+    font-style: italic;
+    border: solid;
+}
+.output{
+    display: inline-block;
+    height: 200px;
+    width: 550px;
+    margin-right: 20px;
+    color:blueviolet;
+    position:right;
+    vertical-align: top;
+    font-family:Script MT Bold;
+    font-style: italic;
+    border: solid;
+}
+.ch2{
+    display: inline-block;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 200px;
+    width: 550px;
+    margin-left: 10px;
+    color:blueviolet;
+    vertical-align:top;
+    font-family:Script MT Bold;
+    font-style: italic;
+    border: solid;
+}
+div.output {
+  position:absolute;
+  right: 8px;
+  width: 570px;
+  height: 650px;
+  border: solid blueviolet;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+</style>
+</head>
+
+<header>
+    <h1 class="head">DockerPort🐳</h1>
+
+</header>
+<body  id='bg' style="background-color: black;"></body>
+<div class="mainhome">
+    <center><h2>Welcome to Docker portal..Access the conatiner images!!</h2></center>
+</div>
+<div class="mainc">
+    &nbsp;
+    <div class="output">
+        <center class="title"><h3> Output 🐳 </h3></center>
+        <pre><div id="ch3"></div></pre>
+    </div>
+    <div class="ch1">
+        <div><center class="title"><h3>Start Docker Container🐳</h3></center><br>
+            <div class="d1">
+                <name>Container Name :</name>
+                <input id="cname" name="startd" type="name">
+                <br>
+                <name>Image Name : </name>
+                <select id="iname">
+                    <option value="ubuntu:latest">available images</option>
+                    <option value="centos:latest">Centos:Latest</option>
+                    <option value="centos:8">Centos:8</option>
+                    <option value="ubuntu:latest">Ubuntu</option>
+
+                  </select>
+                  <br><br>
+                <center> <button onclick="myoutput();">Start Container</button></center>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="ch2">
+        <div><center class="title"><h3>Status of Docker Container🐳</h3></center><br>
+            <div class="d2">
+                    <name>Containers List :</name>
+                    <select id="cmd">  
+                        <option value="ps">Running Containers</option>
+                        <option value="ps -a">All Containers </option>
+                        
+
+                      </select>
+                  <br><br><br>
+                <center> <button onclick="myoutput2();">Check Running Containers</button></center>
+                <pre><div id="cstatus"></div></pre>
+            </div>
+            
+        </div>
+    </div><br><br>
+    <div class="ch1">
+        <div><center class="title"><h3>Stop running Container🐳</h3></center><br>
+            <div class="d1">
+                <name>Enter Your Container Name : </name>
+                <input id="d_stop" name="stopd" type="name">
+                <br><br>
+                <center> <button onclick="myoutput3();">Stop Container</button> </center>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
+</html>
