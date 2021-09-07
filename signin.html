@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://192.168.0.29/signin.js"> </script>
+<style>
+  body{
+    background-image: url("./float.gif");
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+h1 {
+  color:indigo;
+  font-family:'Broadway';
+  font-style:italic;
+  font-size: 100%;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+h2 {
+  color:indigo;
+  font-family:'Broadway';
+  font-style:italic;
+  font-size: 100%;
+  border: 1px solid lightseagreen;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 10px;
+  margin-left: 80px;
+  background-color:lightseagreen;
+}
+
+label.outset {border-style: outset;}
+
+
+.formCenter {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.formCenter.formChange {
+    min-width: 300px;
+    max-width: 500px;
+    padding: 50px;
+}
+#loginForm .input-group {
+    margin: 20px 0;
+}
+@media (max-width : 768px) {
+    .formCenter.formChange {
+        width: 100%;
+    }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+}
+</style>
+</head>
+<body>
+       
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<center> <h1>  Login Form </h1> </center>
+    <div id="d1"></div> 
+    <div class="input1">
+    <form action="http://192.168.0.29/index.html" method="POST"> 
+            <label><h2>Username :</h2> </label> 
+            <input id="usna" type="text" placeholder="Enter Username" name="username" required>
+            <label><h2>Password :</h2> </label> 
+            <input class="usna" type="password" placeholder="Enter Password" name="password" required>
+            
+            <button type="submit">Login</button> 
+
+             
+         
+    </form>
+    </div> 
+    </div> 
+</body>
+</html>
